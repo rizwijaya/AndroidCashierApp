@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context="com.murphy.simplekasir.MainActivity" >
+    <!--Form Nama Pelanggan -->
+
+    <TextView
+        android:id="@+id/textpelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:labelFor="@id/pelanggan"
+        android:paddingTop="24dp"
+        android:text="@string/nama_pelanggan"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+            android:id="@+id/pelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:autofillHints="Nama Pelanggan"
+            android:inputType="text"
+            android:minWidth="48dp"
+            android:minHeight="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp" />
+
+    <!--Form Nama Barang -->
+
+    <!--Form Jumlah Barang -->
+
+    <TextView
+        android:id="@+id/textbarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:labelFor="@+id/barang"
+        android:paddingTop="24dp"
+        android:text="@string/nama_barang"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpelanggan"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="nama barang"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/pelanggan"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <!--Form Harga Barang -->
+
+    <!--Form Total Barang -->
+<!--    <TextView-->
+<!--        android:id="@+id/texttotal"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:labelFor="@+id/total"-->
+<!--        android:paddingTop="24dp"-->
+<!--        android:text="@string/total_harga"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.024"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteY="278dp"-->
+<!--        tools:ignore="MissingConstraints" />-->
+<!--        <EditText-->
+<!--            android:id="@+id/total"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:autofillHints="Total Harga"-->
+<!--            android:enabled="false"-->
+<!--            android:inputType="number"-->
+<!--            android:textColor="@android:color/holo_red_light"-->
+<!--            tools:layout_editor_absoluteX="8dp"-->
+<!--            tools:layout_editor_absoluteY="322dp"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/textjmlbarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:labelFor="@+id/jmlbarang"
+        android:paddingTop="24dp"
+        android:text="@string/jumlah_barang"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textharga"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@id/jmlbarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:autofillHints="Jumlah Barang"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/barang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/textharga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:labelFor="@+id/harga"
+        android:paddingTop="24dp"
+        android:text="@string/harga_barang"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textbarang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:autofillHints="Harga Barang"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/jmlbarang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <Button
+        android:id="@+id/btnsimpan"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/simpan"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <Button
+        android:id="@+id/btnkeranjang"
+        android:layout_width="132dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="424dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/keranjang"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnkeluar"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="424dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/keluar"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

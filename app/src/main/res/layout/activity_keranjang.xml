@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/background"
+    tools:context=".KeranjangActivity">
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="382dp"
+        android:layout_height="327dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="13dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/texttotalbayar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/listView1"-->
+<!--        android:layout_marginTop="-200dp"-->
+<!--        android:labelFor="@+id/etJmlUang"-->
+<!--        android:paddingTop="24dp"-->
+<!--        android:text="@string/total_bayar"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/totalbayar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/listView1"-->
+<!--        android:layout_marginTop="-200dp"-->
+<!--        android:layout_toEndOf="@id/texttotalbayar"-->
+<!--        android:autofillHints="Jumlah Uang"-->
+<!--        android:enabled="false"-->
+<!--        android:inputType="number"-->
+<!--        android:textColor="@android:color/holo_red_light"-->
+<!--        tools:ignore="LabelFor" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textpembayaran"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/totalbayar"-->
+<!--        android:labelFor="@+id/pembayaran"-->
+<!--        android:paddingTop="24dp"-->
+<!--        android:text="@string/pembayaran"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textStyle="bold" />-->
+<!--        <EditText-->
+<!--            android:id="@+id/pembayaran"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/totalbayar"-->
+<!--            android:layout_toEndOf="@id/textpembayaran"-->
+<!--            android:autofillHints="pembayaran"-->
+<!--            android:inputType="number"-->
+<!--            android:textColor="@color/purple_700" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textkembalian"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/pembayaran"-->
+<!--        android:labelFor="@+id/kembalian"-->
+<!--        android:paddingTop="24dp"-->
+<!--        android:text="@string/kembalian"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/kembalian"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/pembayaran"-->
+<!--        android:layout_toEndOf="@id/textkembalian"-->
+<!--        android:autofillHints="Kembalian"-->
+<!--        android:enabled="false"-->
+<!--        android:inputType="number"-->
+<!--        android:textColor="@android:color/holo_green_dark" />-->
+
+
+    <Button
+        android:id="@+id/btnproses"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="173dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/bayar_sekarang"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnhapus"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnproses"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/bersihkan"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnkembali"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnproses"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="413dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/kembali"
+        android:textColor="@android:color/white"
+        tools:ignore="RtlHardcoded" />
+</RelativeLayout>

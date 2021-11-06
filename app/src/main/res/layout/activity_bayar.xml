@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/texttotalbayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:labelFor="@+id/etJmlUang"
+        android:text="@string/total_bayar"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/totalbayar"
+        android:layout_width="186dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/texttotalbayar"
+        android:autofillHints="Jumlah Uang"
+        android:enabled="false"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textpembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttotalbayar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
+        android:labelFor="@+id/pembayaran"
+        android:text="@string/pembayaran"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pembayaran"
+        android:layout_width="209dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/totalbayar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/textpembayaran"
+        android:autofillHints="pembayaran"
+        android:inputType="number"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textkembalian"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/textpembayaran"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="537dp"
+        android:labelFor="@+id/kembalian"
+        android:text="@string/kembalian"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/kembalian"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pembayaran"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="540dp"
+        android:layout_toEndOf="@+id/textkembalian"
+        android:autofillHints="Kembalian"
+        android:enabled="false"
+        android:inputType="number"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnproses"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="455dp"
+        android:background="@drawable/bg_button"
+        android:textColor="@android:color/white"
+        android:text="@string/bayar" />
+
+    <Button
+        android:id="@+id/btnkembali"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="455dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/kembali"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

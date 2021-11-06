@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".ListAdapterKeranjang">
+
+    <TextView
+        android:id="@+id/barang"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:text="@string/barang"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#050505"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <TextView
+        android:id="@+id/jumlah"
+        android:layout_width="92dp"
+        android:layout_height="25dp"
+        android:text="@string/jumlah"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#050505"
+        app:layout_constraintStart_toEndOf="@+id/barang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="112dp"
+        android:layout_height="39dp"
+        android:text="@string/totalview"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#050505"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toEndOf="@+id/jumlah"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
